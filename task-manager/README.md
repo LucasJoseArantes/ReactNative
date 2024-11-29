@@ -1,50 +1,104 @@
-# Welcome to your Expo app 👋
+# Gerenciamento de Tarefas com Prioridades
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este é um aplicativo em **React Native** desenvolvido como parte de uma prova prática para a disciplina **Projeto Desenvolvimento de Dispositivos Móveis**. O aplicativo permite gerenciar uma lista de tarefas, organizadas por prioridades. Ele inclui funcionalidades como adição, edição, exclusão e ordenação de tarefas. 
 
-## Get started
+---
 
-1. Install dependencies
+## 📝 **Funcionalidades**
 
-   ```bash
-   npm install
-   ```
+1. **Exibição de Tarefas**: 
+   - Nome da tarefa.
+   - Descrição da tarefa.
+   - Indicador visual de prioridade (Alta, Média, Baixa).
 
-2. Start the app
+2. **Adição de Tarefas**:
+   - Formulário para inserir nome, descrição e prioridade da tarefa.
 
-   ```bash
-    npx expo start
-   ```
+3. **Edição de Tarefas**:
+   - Seleção de uma tarefa existente para atualizar suas informações.
 
-In the output, you'll find options to open the app in a
+4. **Exclusão de Tarefas**:
+   - Remoção de tarefas com um botão dedicado.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+5. **Ordenação de Tarefas**:
+   - Possibilidade de organizar as tarefas por ordem de prioridade (maior para menor ou vice-versa).
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+6. **Componentização**:
+   - Código modularizado com componentes reutilizáveis, como **TaskForm**, **TaskListItem**.
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## 🚀 **Tecnologias Utilizadas**
+
+- **React Native** (Expo Framework)
+- **Hooks** do React (`useState`)
+- **FlatList** para renderização eficiente de listas
+- **StyleSheet** para estilização
+- **Pressable** para ações interativas
+
+---
+
+## 📁 **Estrutura do Projeto**
 
 ```bash
-npm run reset-project
+/task-manager
+├── /components
+│   ├── TaskForm.jsx 
+│   ├── TaskListItem.jsx    
+├── App.js
+├── /assets
+└── /styles
+    └── styles.js
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🛠️ **Como Executar**
 
-## Learn more
+### 1. **Pré-requisitos**
+- Node.js instalado na máquina.
+- Expo CLI globalmente instalado:
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+npm install -g expo-cli
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- Aplicativo **Expo Go** instalado no dispositivo móvel (disponível para [Android](https://play.google.com/store/apps/details?id=host.exp.exponent) e [iOS](https://apps.apple.com/app/expo-go/id982107779)).
 
-## Join the community
+### 2. **Clonando o Repositório**
+Clone este repositório em sua máquina:
 
-Join our community of developers creating universal apps.
+```bash
+git clone <URL-DO-SEU-REPOSITORIO> cd task-manager
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### 3. **Instalando Dependências**
+Execute o seguinte comando no diretório do projeto:
+
+```bash
+npm install
+```
+
+### 4. **Executando o Projeto**
+Inicie o servidor do Expo:
+
+```bash
+npx expo start --tunnel
+```
+### 5. **Executando no Dispositivo**
+1. No terminal, será exibido um QR Code.
+2. Abra o aplicativo **Expo Go** no seu dispositivo.
+3. Escaneie o QR Code para carregar o app no dispositivo.
+
+## 📷 **Preview do App**
+
+### Lista de Tarefas
+- Mostra nome, descrição e prioridade com indicador visual.
+
+### Formulário de Tarefas
+- Interface limpa e intuitiva para adicionar ou editar tarefas.
+
+## 🧑‍💻 **Contribuidores**
+
+- **Nome do Desenvolvedor**: Rafael Andrade Prado  
+- **Disciplina**: Projeto Desenvolvimento de Dispositivos Móveis  
+- **Professor**: Edson Angoti Júnior  
+
