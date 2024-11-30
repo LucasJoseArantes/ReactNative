@@ -68,7 +68,22 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, padding: 20, backgroundColor: "#fff" },
-  sortButton: { padding: 10, backgroundColor: "#007BFF", marginBottom: 10 },
-  sortButtonText: { color: "#fff", textAlign: "center" },
+  container: {
+    flex: 1,
+    padding: 20,
+    backgroundColor: "#FF69B4", // Rosa forte
+  },
+  sortButton: {
+    padding: 10,
+    backgroundColor: "#FFD700", // Amarelo chamativo
+    marginBottom: 10,
+    borderColor: "#000",
+    borderWidth: 2,
+  },
+  sortButtonText: {
+    color: "#000", // Texto preto
+    textAlign: "center",
+    fontWeight: "bold",
+    fontSize: 16,
+  },
 });
